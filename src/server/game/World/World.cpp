@@ -459,12 +459,14 @@ void World::LoadConfigSettings(bool reload)
     ///- Read ticket system setting from the config file
     m_bool_configs[CONFIG_ALLOW_TICKETS] = sConfigMgr->GetOption<bool>("AllowTickets", true);
     m_bool_configs[CONFIG_DELETE_CHARACTER_TICKET_TRACE] = sConfigMgr->GetOption<bool>("DeletedCharacterTicketTrace", false);
+    m_bool_configs[CONFIG_FALLDAMAGE_NONCOMBAT_NONLETHAL] = sConfigMgr->GetOption<bool>("FallDamageWhileNotInCombat.IsNotLethal", false);
 
     ///- Get string for new logins (newly created characters)
     SetNewCharString(sConfigMgr->GetOption<std::string>("PlayerStart.String", ""));
 
     ///- Send server info on login?
     m_int_configs[CONFIG_ENABLE_SINFO_LOGIN] = sConfigMgr->GetOption<int32>("Server.LoginInfo", 0);
+    m_int_configs[CONFIG_FALLDAMAGE_NONCOMBAT_MINHEALTH] = sConfigMgr->GetOption<int32>("FallDamageWhileNotInCombat.MinHealth", 4);
 
     ///- Read all rates from the config file
     rate_values[RATE_HEALTH]      = sConfigMgr->GetOption<float>("Rate.Health", 1);

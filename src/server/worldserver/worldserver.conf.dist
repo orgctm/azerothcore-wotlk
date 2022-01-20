@@ -2306,6 +2306,18 @@ Rate.Rest.Offline.InWilderness   = 1
 Rate.Damage.Fall = 1
 
 #
+#   FallDamageWhileNotInCombat.IsNotLethal
+#        Description: If true, fall damage while not in combat is not lethal.
+#        Default:     0
+#
+#        FallDamageWhileNotInCombat.MinHealth
+#             Description: If true, fall damage while not in combat is not lethal.
+#             Default:     0, recommended 4 if latests its true.
+
+FallDamageWhileNotInCombat.IsNotLethal = 0
+FallDamageWhileNotInCombat.MinHealth = 0
+
+#
 #    Rate.Auction.Time
 #    Rate.Auction.Deposit
 #    Rate.Auction.Cut
