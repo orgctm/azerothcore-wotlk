@@ -68,7 +68,7 @@ RealmID = 1
 #        Example:     "@prefix@\home\youruser\azerothcore\data"
 #        Default:     "."
 
-DataDir = "."
+DataDir = "./Data"
 
 #
 #    LogsDir
