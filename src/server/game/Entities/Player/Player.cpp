@@ -13315,7 +13315,7 @@ void Player::HandleFall(MovementInfo const& movementInfo)
                 }
 
                 // Disabled fall damage
-                if (IsInCombat() && sWorld->getBoolConfig(CONFIG_FALLDAMAGE_NONCOMBAT_NONLETHAL) && damage >= GetHealth()) {
+                if (!IsInCombat() && sWorld->getBoolConfig(CONFIG_FALLDAMAGE_NONCOMBAT_NONLETHAL) && damage >= GetHealth()) {
                     damage = GetHealth() - (uint32)sWorld->getIntConfig(CONFIG_FALLDAMAGE_NONCOMBAT_MINHEALTH);
                 }
 
