@@ -562,7 +562,7 @@ PacketLogFile = ""
 #                     16 - (FFA_PVP, Free for all PvP mode like arena PvP in all zones except rest
 #                          activated places and sanctuaries)
 
-GameType = 0
+GameType = 16
 
 #
 #    RealmZone
@@ -597,7 +597,7 @@ GameType = 0
 #                     28 - (QA Server     - any language)
 #                     29 - (CN9           - basic-Latin at create, any at login)
 
-RealmZone = 1
+RealmZone = 4
 
 #
 #    World.RealmAvailability
@@ -798,7 +798,7 @@ CharactersPerRealm = 10
 #        Range:       1-10
 #        Default:     1
 
-HeroicCharactersPerRealm = 1
+HeroicCharactersPerRealm = 10
 
 #
 #    CharacterCreating.MinLevelForHeroicCharacter
@@ -808,7 +808,7 @@ HeroicCharactersPerRealm = 1
 #                     0  - (Disabled)
 #                     1  - (Enabled, Requires at least another level 1 character)
 
-CharacterCreating.MinLevelForHeroicCharacter = 55
+CharacterCreating.MinLevelForHeroicCharacter = 0
 
 #
 #    SkipCinematics
@@ -834,7 +834,7 @@ MaxPlayerLevel = 80
 #        Description: Level requirement for Dual Talent Specialization
 #        Default:     40
 
-MinDualSpecLevel = 40
+MinDualSpecLevel = 10
 
 #
 #    StartPlayerLevel
@@ -842,7 +842,7 @@ MinDualSpecLevel = 40
 #        Range:       1-MaxPlayerLevel
 #        Default:     1
 
-StartPlayerLevel = 1
+StartPlayerLevel = 69
 
 #
 #    StartHeroicPlayerLevel
@@ -865,14 +865,14 @@ StartPlayerMoney = 0
 #        Description: Maximum honor points a character can have.
 #        Default:     75000
 
-MaxHonorPoints = 75000
+MaxHonorPoints = 250000
 
 #
 #    StartHonorPoints
 #        Description: Amount of honor points that characters have after creation.
 #        Default:     0
 
-StartHonorPoints = 0
+StartHonorPoints = 75000
 
 #
 #    MaxArenaPoints
@@ -923,7 +923,7 @@ InstantLogout = 1
 #                     1  - (Enabled, prevent players AFK from being logged out in Sanctuary zones)
 #                     2  - (Enabled, prevent players AFK from being logged out in all zones)
 
-PreventAFKLogout = 0
+PreventAFKLogout = 1
 
 #
 #    DisableWaterBreath
@@ -986,7 +986,7 @@ CastUnstuck = 1
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-Instance.IgnoreLevel = 0
+Instance.IgnoreLevel = 1
 
 #
 #    Instance.IgnoreRaid
@@ -994,7 +994,7 @@ Instance.IgnoreLevel = 0
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-Instance.IgnoreRaid = 0
+Instance.IgnoreRaid = 1
 
 #
 #    Instance.GMSummonPlayer
@@ -1115,7 +1115,7 @@ Guild.BankEventLogRecordsCount = 25
 #        Range:       0-11
 #        Default:     2
 
-MaxPrimaryTradeSkill = 2
+MaxPrimaryTradeSkill = 4
 
 #
 #    MinPetitionSigns
@@ -1146,7 +1146,7 @@ MaxRecruitAFriendBonusDistance = 100
 #        Description: Time (in seconds) mail delivery is delayed when sending items.
 #        Default:     3600 - (1 hour)
 
-MailDeliveryDelay = 3600
+MailDeliveryDelay = 300
 
 #
 #    SkillChance.Prospecting
@@ -1212,7 +1212,7 @@ FlashAtStart = 1
 #        Example:     "Welcome to John\'s Server@"
 #        Default:     "Welcome to an AzerothCore server."
 
-Motd = "Welcome to an AzerothCore server."
+Motd = "Bienvenidos al server mas CTM de todos."
 
 #    PLEASE NOTE: another (hardcoded) text will appear below the MOTD:
 #
@@ -1691,11 +1691,11 @@ Rate.Corpse.Decay.Looted = 0.5
 #                     1 - (Rate.Creature.Elite.WORLDBOSS.Damage)
 #
 
-Rate.Creature.Normal.Damage          = 1
-Rate.Creature.Elite.Elite.Damage     = 1
-Rate.Creature.Elite.RARE.Damage      = 1
-Rate.Creature.Elite.RAREELITE.Damage = 1
-Rate.Creature.Elite.WORLDBOSS.Damage = 1
+Rate.Creature.Normal.Damage          = 2
+Rate.Creature.Elite.Elite.Damage     = 2.5
+Rate.Creature.Elite.RARE.Damage      = 2.5
+Rate.Creature.Elite.RAREELITE.Damage = 2.5
+Rate.Creature.Elite.WORLDBOSS.Damage = 3
 
 #
 #    Rate.Creature.Normal.SpellDamage
@@ -1710,11 +1710,11 @@ Rate.Creature.Elite.WORLDBOSS.Damage = 1
 #                     1 - (Rate.Creature.Elite.RAREELITE.SpellDamage)
 #                     1 - (Rate.Creature.Elite.WORLDBOSS.SpellDamage)
 
-Rate.Creature.Normal.SpellDamage          = 1
-Rate.Creature.Elite.Elite.SpellDamage     = 1
-Rate.Creature.Elite.RARE.SpellDamage      = 1
-Rate.Creature.Elite.RAREELITE.SpellDamage = 1
-Rate.Creature.Elite.WORLDBOSS.SpellDamage = 1
+Rate.Creature.Normal.SpellDamage          = 2
+Rate.Creature.Elite.Elite.SpellDamage     = 2.5
+Rate.Creature.Elite.RARE.SpellDamage      = 2.5
+Rate.Creature.Elite.RAREELITE.SpellDamage = 2.5
+Rate.Creature.Elite.WORLDBOSS.SpellDamage = 3
 
 #
 #    Rate.Creature.Normal.HP
@@ -1729,11 +1729,11 @@ Rate.Creature.Elite.WORLDBOSS.SpellDamage = 1
 #                     1 - (Rate.Creature.Elite.RAREELITE.HP)
 #                     1 - (Rate.Creature.Elite.WORLDBOSS.HP)
 
-Rate.Creature.Normal.HP          = 1
-Rate.Creature.Elite.Elite.HP     = 1
-Rate.Creature.Elite.RARE.HP      = 1
-Rate.Creature.Elite.RAREELITE.HP = 1
-Rate.Creature.Elite.WORLDBOSS.HP = 1
+Rate.Creature.Normal.HP          = 2
+Rate.Creature.Elite.Elite.HP     = 2.5
+Rate.Creature.Elite.RARE.HP      = 2.5
+Rate.Creature.Elite.RAREELITE.HP = 2.5
+Rate.Creature.Elite.WORLDBOSS.HP = 3
 
 #
 #    ListenRange.Say
@@ -1928,7 +1928,7 @@ ChatLevelReq.Say = 1
 #                     invite despite having lower level)
 #        Default:     1
 
-PartyLevelReq = 1
+PartyLevelReq = 70
 
 #
 #    AllowPlayerCommands
@@ -2171,15 +2171,15 @@ Rate.Skill.Discovery = 1
 #                     1 - (Rate.Drop.Item.Referenced)
 #                     1 - (Rate.Drop.Money)
 
-Rate.Drop.Item.Poor             = 1
-Rate.Drop.Item.Normal           = 1
-Rate.Drop.Item.Uncommon         = 1
-Rate.Drop.Item.Rare             = 1
+Rate.Drop.Item.Poor             = 1.5
+Rate.Drop.Item.Normal           = 3
+Rate.Drop.Item.Uncommon         = 2
+Rate.Drop.Item.Rare             = 2
 Rate.Drop.Item.Epic             = 1
 Rate.Drop.Item.Legendary        = 1
 Rate.Drop.Item.Artifact         = 1
 Rate.Drop.Item.Referenced       = 1
-Rate.Drop.Money                 = 1
+Rate.Drop.Money                 = 0.5
 
 #    RewardBonusMoney
 #        Description: Allows to further tweak the amount of extra money rewarded by quests when the player
@@ -2264,11 +2264,11 @@ Rate.Drop.Item.ReferencedAmount = 1
 #                     1 - (Rate.XP.Explore)
 #                     1 - (Rate.XP.Pet)
 
-Rate.XP.Kill      = 1
-Rate.XP.Quest     = 1
-Rate.XP.Quest.DF  = 1
-Rate.XP.Explore   = 1
-Rate.XP.Pet       = 1
+Rate.XP.Kill      = 5
+Rate.XP.Quest     = 3
+Rate.XP.Quest.DF  = 3
+Rate.XP.Explore   = 5
+Rate.XP.Pet       = 2
 
 #
 #    Rate.XP.BattlegroundKill
@@ -2276,14 +2276,14 @@ Rate.XP.Pet       = 1
 #                     Only works if Battleground.GiveXPForKills = 1
 #        Default:     1
 
-Rate.XP.BattlegroundKill = 1
+Rate.XP.BattlegroundKill = 2
 
 #
 #    Rate.RepairCost
 #        Description: Repair cost rate.
 #        Default:     1
 
-Rate.RepairCost = 1
+Rate.RepairCost = 0.1
 
 #
 #    Rate.Rest.InGame
@@ -2314,8 +2314,8 @@ Rate.Damage.Fall = 1
 #             Description: If true, fall damage while not in combat is not lethal.
 #             Default:     0, recommended 4 if latests its true.
 
-FallDamageWhileNotInCombat.IsNotLethal = 0
-FallDamageWhileNotInCombat.MinHealth = 0
+FallDamageWhileNotInCombat.IsNotLethal = 1
+FallDamageWhileNotInCombat.MinHealth = 4
 
 #
 #    Rate.Auction.Time
@@ -2328,22 +2328,22 @@ FallDamageWhileNotInCombat.MinHealth = 0
 #                     1 - (Rate.Auction.Cut)
 
 Rate.Auction.Time    = 1
-Rate.Auction.Deposit = 1
-Rate.Auction.Cut     = 1
+Rate.Auction.Deposit = 2
+Rate.Auction.Cut     = 2
 
 #
 #    Rate.Honor
 #        Description: Honor gain rate.
 #        Default:     1
 
-Rate.Honor = 1
+Rate.Honor = 3
 
 #
 #    Rate.ArenaPoints
 #        Description: Arena points gain rate.
 #        Default:     1
 
-Rate.ArenaPoints = 1
+Rate.ArenaPoints = 2
 
 #
 #    Rate.Talent
@@ -2357,21 +2357,21 @@ Rate.Talent = 1
 #        Description: Reputation gain rate.
 #        Default:     1
 
-Rate.Reputation.Gain = 1
+Rate.Reputation.Gain = 5
 
 #
 #    Rate.Reputation.LowLevel.Kill
 #        Description: Reputation gain from killing low level (grey) creatures.
 #        Default:     1
 
-Rate.Reputation.LowLevel.Kill = 1
+Rate.Reputation.LowLevel.Kill = 5
 
 #
 #    Rate.Reputation.LowLevel.Quest
 #        Description: Reputation gain rate.
 #        Default:     1
 
-Rate.Reputation.LowLevel.Quest = 1
+Rate.Reputation.LowLevel.Quest = 5
 
 #
 #    Rate.Reputation.RecruitAFriendBonus
@@ -2403,7 +2403,7 @@ Rate.InstanceResetTime = 1
 #       The lower the rate the less experience is required.
 #        Default:     0.05
 #
-Rate.Pet.LevelXP = 0.05
+Rate.Pet.LevelXP = 0.005
 
 #
 #    SkillGain.Crafting
@@ -2416,10 +2416,10 @@ Rate.Pet.LevelXP = 0.05
 #                     1 - (SkillGain.Gathering)
 #                     1 - (SkillGain.Weapon)
 
-SkillGain.Crafting  = 1
-SkillGain.Defense   = 1
-SkillGain.Gathering = 1
-SkillGain.Weapon    = 1
+SkillGain.Crafting  = 3
+SkillGain.Defense   = 3
+SkillGain.Gathering = 3
+SkillGain.Weapon    = 3
 
 #
 #    SkillChance.Orange
@@ -2453,14 +2453,14 @@ SkillChance.SkinningSteps = 0
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-DurabilityLoss.InPvP = 0
+DurabilityLoss.InPvP = 1
 
 #
 #    DurabilityLoss.OnDeath
 #        Description: Durability loss percentage on death.
 #        Default:     10
 
-DurabilityLoss.OnDeath = 10
+DurabilityLoss.OnDeath = 20
 
 #
 #    DurabilityLossChance.Damage
@@ -2503,7 +2503,7 @@ DurabilityLossChance.Block = 0.05
 #                     MaxPlayerLevel+1 - (Disabled)
 #                     -10              - (Enabled, Level 1+ characters have 10 minute duration)
 
-Death.SicknessLevel = 11
+Death.SicknessLevel = 71
 
 #
 #    Death.CorpseReclaimDelay.PvP
